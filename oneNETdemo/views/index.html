@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title><%= title%></title>
+    <link rel="stylesheet/less" href="/asset/css/index.less">
 </head>
 <body>
-$END$
+<%include header.html%>
+<div class="c-intro">
+    <div class="c-intro-detail ">
+        <h1>中移物联网开放平台为您推荐全面完备的 IOT 云服务</h1>
+        <div class="quotes-wrapper">
+            <div class="quotes">
+                <p class="quote" style="opacity: 1; top: 0px;">为IoT开发者提供智能设备自助开发工具、后台技术支持服务，为您提供物联网专网、短彩信、位置定位、设备管理、消息分发、远程升级等基础服务</p>
+                <p class="quote" style="opacity: 0; top: -50px;">为您提供第三方应用开发平台，快速实现不同业务需求，借助轻应用孵化器快速搭建属于自己的web和APP应用</p>
+                <p class="quote" style="opacity: 0; top: -50px;">高扩展的数据库、实时数据处理、智能预测离线数据分析、数据可视化展示等为您提供多维度的业务运营服务</p>
+                <p class="quote" style="opacity: 0; top: -50px;">高频的开发者社区，汇聚着不同的知识源，帮您结交更多的物联网爱好者，让项目与开发成果开始传播</p>
+            </div>
+        </div>
+        <ul class="function-list">
+            <a href="/doc/art/id/200#56">
+                <li data-flag-id="0" class="paas">
+                    <p>IoT PaaS 基础能力</p>
+                </li>
+            </a>
+            <a href="/doc/art/id/200#56">
+                <li data-flag-id="1" class="saas">
+                    <p>SaaS 业务服务</p>
+                </li>
+            </a>
+            <a href="/doc/art/id/199#56">
+                <li data-flag-id="2" class="iot">
+                    <p>IOT 数据云</p>
+                </li>
+            </a>
+            <a href="//open.iot.10086.cn/bbs/forum.php">
+                <li data-flag-id="3" class="developer">
+                    <p>开发者社区</p>
+                </li>
+            </a>
+        </ul>
+    </div>
+</div>
+<script src="/asset/js/less.min.js"></script>
 </body>
 </html>
