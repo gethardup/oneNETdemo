@@ -31,6 +31,8 @@ let app=express();
 // Cat.find(function (err, cats) {
 //    console.log(cats);
 // });
+global.dbHelper = require('./dao/helper');
+global.db = mongoose.connect("mongodb://127.0.0.1:27017/topitme");
 app.use(session({
     secret:"aaa",
     cookie:{
