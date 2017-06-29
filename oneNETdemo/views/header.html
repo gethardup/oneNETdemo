@@ -18,10 +18,13 @@
         <a href="/discover" class="menu " title="发现">发现</a>
         <a href="/bbs" class="menu ">社区</a>
         <a href="/event" class="menu ">动态</a>        <!-- <a href="javascript:;" class="menu ">集市</a> -->
-        <!--<div class="profile clearfix">-->
-            <!--<a href="/login?redirect_uri=%2F" rel="nofollow" class="button round">登录</a>-->
-            <!--<a href="/reg" rel="nofollow" class="button round hollow cold">注册</a>-->
-        <!--</div>-->
+        <% if(!hasUser) {%>
+        <div class="profile clearfix">
+            <a href="/login?redirect_uri=%2F" rel="nofollow" class="button round">登录</a>
+            <a href="/register" rel="nofollow" class="button round hollow cold">注册</a>
+        </div>
+        <%}%>
+        <% if(hasUser){%>
         <div class="profile clearfix">
             <a class="button expand hollow icon-develop" href="/product" target="_blank"><span>开发者中心</span></a>
             <!--<a class="developer-button expand hollow" href="/product" target="_blank"><span>开发者中心</span></a>-->
@@ -39,6 +42,7 @@
             <a class="icon-notify new-notice"></a>
 
         </div>
+        <%}%>
     </div>
 
 </div>

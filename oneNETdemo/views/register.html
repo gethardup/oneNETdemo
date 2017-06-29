@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet/less" href="/asset/css/user.less">
+    <link rel="stylesheet" href="/asset/css/bootstrap.css">
+</head>
+<body>
+ <%include header.html%>
+    <div class="panel panel-danger userBox">
+        <div class="panel-heading">用户账号注册</div>
+        <div class="panel-body" style="padding: 25px;">
+            <form>
+                <div class="input-group">
+                    <span class="input-group-addon" >用户名：</span>
+                    <input type="text" class="form-control" placeholder="自定义用户名" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">设置密码：</span>
+                    <input type="text" class="form-control" placeholder="不能为纯数字，长度至少8位" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">确认密码：</span>
+                    <input type="text" class="form-control" placeholder="请再次输入密码" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">手机号码：</span>
+                    <input type="text" class="form-control" placeholder="请输入手机号码" aria-describedby="basic-addon1">
+                </div>
+                <div class="btn-group pull-right" style="margin: 30px;">
+                    <input type="submit" class="btn btn-default" value="注册">
+                    <input type="reset" class="btn btn-default" value="重置">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<script src="/asset/js/less.min.js"></script>
+</body>
+</html>
